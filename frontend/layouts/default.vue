@@ -1,10 +1,12 @@
 <template>
   <div>
-    <header></header>
-    <main>
+    <header class="relative z-10">
+      <Menu />
+    </header>
+    <main class="relative z-0">
       <Nuxt />
     </main>
-    <footer></footer>
+    <footer class="relative z-0"></footer>
   </div>
 </template>
 

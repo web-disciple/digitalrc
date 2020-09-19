@@ -19,6 +19,9 @@ export default {
     ]
   },
 
+  router: {
+    linkActiveClass: 'font-semibold text-blue-500'
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
   ],
