@@ -8,7 +8,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@braid/vue-formulate": "^2.4.3",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/prismic": "^1.2.4",
@@ -21,6 +22,5 @@
     "nuxt": "^2.14.5",
     "redirect-ssl": "^2.0.0",
     "tslib": "^2.0.1"
-  },
-  "devDependencies": {}
+  }
 }
