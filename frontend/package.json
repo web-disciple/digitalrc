@@ -19,6 +19,7 @@
     "node-mailjet": "^3.3.1",
     "nuxt": "^2.14.5",
     "redirect-ssl": "^2.0.0",
-    "tslib": "^2.0.1"
+    "tslib": "^2.0.1",
+    "@nuxtjs/vercel-builder": "^0.17.5"
   }
 }
