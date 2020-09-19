@@ -1,8 +1,7 @@
-import serveStatic from 'serve-static'
-
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'server',
+  target: 'static',
+  mode: 'spa',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'digitalrc',
@@ -52,7 +51,6 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/now-builder'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
