@@ -6,7 +6,7 @@
           <nuxt-link to="/">
             <img
               class="h-10 lg:h-16"
-              src="https://images.prismic.io/digitalrc/488bcee1-d85f-4130-86f9-d9b5ea8b6e4b_digital-rc-logo-transparent-web.png?auto=compress,format"
+              src="~/static/images/logos/digital-rc-logo-transparent-web.png"
               alt
             />
           </nuxt-link>

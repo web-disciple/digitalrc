@@ -13,7 +13,7 @@
         <img src="~/static/images/illustrations/printer-illu.webp" alt />
       </div>
       <div class="lg:w-1/2 lg:absolute lg:bottom-0 lg:right-0">
-        <black-card>
+        <black-card class="transform-card-right">
           Spécialisé dans les imprimantes professionnelles de la marque RICOH.
           <br />
           <br />Nous revendons des modèles récents remis à neufs. Grâce à cela nous sommes moins chères que la concurrence.
@@ -84,15 +84,29 @@
         </product-card>
       </div>
     </div>
+    <div class="relative lg:flex lg:flex-row-reverse lg:items-center lg:mt-8">
+      <div class="lg:w-1/2">
+        <img class="transform-img-right" src="~/static/images/photos/richard-claude.webp" alt />
+      </div>
+      <div class="lg:w-1/2 custom-position-card">
+        <black-card class="transform-card-left">
+          Notes de Richard Claude, fondateur de Digital RC :
+          <br/>
+          <br/>
+          <p class="font-light italic">
+            "J'ai travaillé pendant de longues années dans le milieu du servide d'impression. Au fur et à mesure du temps j'ai pu voir quels étaient les besoins réels des clients. C'est pourquoi j'ai décidé de fonder Digital RC. Mon objectif est de répondre à vos besoins en étant simple, moins chères, réactifs afin de construire une relation de confiance !"
+          </p>
+        </black-card>
+      </div>
+    </div>
+    <div class="mt-8">
+      <LayoutContactForm />
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData({ $prismic }) {
-    const home = await $prismic.api.getSingle("homepage");
-    return { home };
-  },
   head: {
     title: "Digital RC - Imprimantes professionnelles",
     meta: [
@@ -106,3 +120,17 @@ export default {
   },
 };
 </script>
+
+<style>
+@media (min-width: 1024px) {
+  .transform-card-right {
+    transform: translate3d(-60px, 60px, 0);
+  }
+  .transform-card-left{
+    transform: translate3d(60px, 0px, 0);
+  }
+  .transform-img-right{
+    transform: translate3d(-60px, 0px, 0);
+  }
+}
+</style>

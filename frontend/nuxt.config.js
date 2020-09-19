@@ -1,7 +1,8 @@
+import serveStatic from 'serve-static'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'static',
-
+  target: 'server',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'digitalrc',
@@ -13,14 +14,19 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
+        rel: 'preload',
+        href: 'https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap',
+        as: 'style'
+      },
+      {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap',
       }
     ]
   },
 
   router: {
-    linkActiveClass: 'font-semibold text-blue-500'
+    linkActiveClass: 'font-semibold text-gray-900'
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
@@ -28,6 +34,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    { src: '~/plugins/vue-formulate', mode: 'client' },
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -37,13 +44,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/prismic'
   ],
-  prismic: {
-    endpoint: 'https://digitalrc.cdn.prismic.io/api/v2',
-    preview: '/preview/'
-    /* see configuration for more */
-  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [

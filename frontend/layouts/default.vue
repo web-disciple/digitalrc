@@ -6,7 +6,9 @@
     <main class="relative z-0">
       <Nuxt />
     </main>
-    <footer class="relative z-0"></footer>
+    <footer class="relative z-0">
+      <Footer />
+    </footer>
   </div>
 </template>
 
