@@ -1,31 +1,32 @@
 <template>
-  <div>
+<div>
     <header class="relative z-10">
-      <Menu />
+        <Menu />
     </header>
-    <main class="relative z-0">
-      <Nuxt />
+    <main class="relative z-0 min-h-screen">
+        <Nuxt />
     </main>
     <footer class="relative z-0">
-      <Footer />
+        <Footer />
     </footer>
-  </div>
+</div>
 </template>
 
 <style>
 html {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora", serif;
+    font-family: "Lora", serif;
 }
 
 .font-title {
-  font-family: "Lora", serif;
+    font-family: "Lora", serif;
 }
 </style>
