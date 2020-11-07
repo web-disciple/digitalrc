@@ -76,7 +76,7 @@ export default {
   robots: () => {
     return {
       UserAgent: '*',
-      Disallow: '/'
+      Allow: '/'
     }
   },
 

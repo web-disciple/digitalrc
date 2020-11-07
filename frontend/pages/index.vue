@@ -1,5 +1,7 @@
 <template>
-<div v-if="$fetchState.pending">Loading</div>
+<div class="fixed" style="top: 50%; left: 50%; transform: translate3d(-50%,-50%,0)">
+    <img src="~/static/images/icons/loading.svg" alt />
+</div>
 <div v-else class="mt-24 lg:mt-32 max-w-screen-xl mx-auto">
     <div class="lg:flex lg:items-center lg:justify-between">
         <div class="lg:w-1/2">
