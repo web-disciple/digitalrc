@@ -1,13 +1,18 @@
 <template>
 <div v-if="$fetchState.pending">Loading</div>
 <div v-else class="mt-24 lg:mt-32 max-w-screen-xl mx-auto">
-    <div>
-        <h1 class="text-2xl p-8 lg:max-w-3xl lg:text-3xl">
-            {{ data.page_title }}
-            <br />
-            <br />
-            <span v-html="data.page_subtitle"></span>
-        </h1>
+    <div class="lg:flex lg:items-center lg:justify-between">
+        <div class="lg:w-1/2">
+            <h1 class="text-2xl p-8 lg:max-w-3xl lg:text-3xl">
+                {{ data.page_title }}
+                <br />
+                <br />
+                <span v-html="data.page_subtitle"></span>
+            </h1>
+        </div>
+        <div class="hidden lg:w-1/2 lg:flex lg:justify-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20393.130445166706!2d2.7503525434741256!3d50.28929010427125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd47d866f95a7b%3A0x6869aedb05652a21!2sArras!5e0!3m2!1sfr!2sfr!4v1604780058187!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
     </div>
     <div class="relative lg:flex lg:mt-8">
         <div class="lg:w-1/2">
